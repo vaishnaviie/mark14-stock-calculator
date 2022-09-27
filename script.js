@@ -6,7 +6,7 @@ var outputBox=document.querySelector("#output-box");
 
 
 function profitOrLoss(ip,sq,cp){
-    if(ip>0&&cp>0){
+    if(ip>0&&cp>0&&sq>0){
         if(ip>cp){
             var loss=(ip-cp)*sq;
             var lossPercent=(loss/ip)*100;
