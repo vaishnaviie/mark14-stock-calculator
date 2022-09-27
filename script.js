@@ -6,7 +6,7 @@ var outputBox=document.querySelector("#output-box");
 
 
 function profitOrLoss(ip,sq,cp){
-    if(ip&&cp){
+    if(ip>0&&cp>0){
         if(ip>cp){
             var loss=(ip-cp)*sq;
             var lossPercent=(loss/ip)*100;
@@ -27,7 +27,7 @@ function profitOrLoss(ip,sq,cp){
         }
     }
     else{
-        outputBox.innerText=(`Enter the positive value`);
+        outputBox.innerText=(`Enter the positive value and make sure all the fields are filled`);
     }
 
 }
